@@ -1,8 +1,9 @@
 pipeline {
   agent { 
-      node {
-          customWorkspace "/workspace/test"
-      }
+    //   node {
+    //       label "test"
+    //       customWorkspace "/workspace/test"
+    //   }
   }
   stages {
     stage('build') {
