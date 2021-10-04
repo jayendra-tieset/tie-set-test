@@ -1,5 +1,10 @@
 pipeline {
-  agent { docker { image 'python:3.7.2' } }
+  agent { 
+      node {
+          label "test"
+          customWorkspace "/workspace/test"
+      }
+  }
   stages {
     stage('build') {
       steps {
